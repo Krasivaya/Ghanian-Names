@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghanian Names </title>
+    <link rel="stylesheet" href="style/minty.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Ghanian Names</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#how">How It Works</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 mt-3">
+                    <div class="text-center mb-5">
+                        <img src="Images/girl-avatar.png" alt="A girl avatar">
+                        <h1 class="site-heading"><br>Find your <strong>Ghanian Name</strong></h1>
+                        <p class="lead site-subheading">In Ghanian culture, children are given their first names as a 'day name' which corresponds to the day in the week they were born.</p>
+                        <a href="#how" class="btn btn-secondary btn-lg">Find Your Name</a>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class=" pt-5">
+        <div class="container">
+                <h1 class="site-heading text-center"><strong>About</strong></h1>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <p class="lead site-subheading mt-3">
+                            Frequently in Ghana, both boys and girls are given their first name depending on the day of the week they were born on.
+                            <br> <br>
+                            Most of the times there are refered as 'Akan Names', and girls and boys get different names depending on their gender and the day of the week they were born.
+                            <br><br>
+                            Example:
+                        </p>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="Images/boy-avatar.png" alt="A boy avatar">
+                    <p class="lead site-subheading mt-3 mid">I am a boy, and I was born on Sunday. My Ghanian name is Kwasi. </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <img src="Images/girl-avatar.png" alt="A girl avatar">
+                    <p class="lead site-subheading mt-3 mid">I am a girl, and I was born on Sunday. My Ghanian name is Akosua. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="lead site-subheading mt-3">
+                        Most of people don't know the days of the week they were born on. Don't worry we have a way to help you know that day and generate for you a Ghanian Name.
+                    </p>
+                    <div class="text-center mb-5">
+                        <a href="#how" class="btn btn-outline-secondary btn-lg">How It Works</a>
+                    </div>
+
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    <section id="how" class="bg-light pt-5 mb-5">
+        <div class="container">
+            <h1 class="site-heading text-center"><strong>How It Works</strong></h1>
+
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <h3>Enter your birthdays credentials</h3> <br>
+
+
+                    <div class="alert alert-dismissible alert-danger" id="yearError" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Ops!</strong> Invalid year.  <a href="#year" class="alert-link ">Change it</a> and try submitting again.
+                    </div>
+                    <div class="alert alert-dismissible alert-danger" id="monthError" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Ops!</strong> Invalid month.  <a href="#month" class="alert-link ">Change it</a> and try submitting again.
+                    </div>
+                    <div class="alert alert-dismissible alert-danger" id="dayError" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Ops!</strong> Invalid day.  <a href="#day" class="alert-link ">Change it</a> and try submitting again.
+                    </div>
+                    <div class="alert alert-dismissible alert-danger" id="genderError" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Ops!</strong> Please select your gender.  <a href="#gender" class="alert-link ">Enter it</a> and try submitting again.
+                    </div>
+
+
+                    <form>
+                        <div class="form-group">
+                            <label class="form-control-label">Birth Year :</label>
+                            <input id="year" type="number" placeholder="Eg: 1998" class="form-control"> <br>
+
+
+                            <label class="form-control-label">Birth Month :</label>
+                            <input id="month" type="number" placeholder="Eg: 12" class="form-control"> <br>
+
+
+                            <label class="form-control-label">Birth Day :</label>
+                            <input id="day" type="number" placeholder="Eg: 31" class="form-control"> <br>
+
+
+                            <label for="exampleSelect1">Select Gender :</label>
+                            <select class="form-control" id="gender">
+                                <option selected disabled>Choose a gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select> <br>
+
+                            <button class="btn btn-secondary btn-lg" id="submit">Find Your Name</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 mt-5 text-center">
+                    <h3>Your Results</h3>
+                    <div id="wait" style="display: block;">
+                        <img src="Images/wait.gif" alt="Awaiting gif">
+                    </div>
+                    <div id="male" style="display: none;">
+                        <img src="Images/boy-avatar.png" alt="Awaiting gif" id="wait">
+                        <h1 class="site-heading"><br>You are <strong><span class="text-capitalize" id="maleName"></span></strong></h1>
+                        <h5><br>Born on <strong><span class="text-capitalize" id="maleDay"></span></strong></h5>
+                    </div>
+                    <div id="female" style="display: none;">
+                        <img src="Images/girl-avatar.png" alt="Awaiting gif" id="wait">
+                        <h1 class="site-heading"><br>You are <strong><span class="text-capitalize" id="femaleName"></span></strong></h1>
+                        <h5><br>Born on <strong><span class="text-capitalize" id="femaleDay"></span></strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
