@@ -1,8 +1,8 @@
 // Declarations
 let yearFull, year, month, day, century;
 let daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-let maleNames =  ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
-let femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+let maleNames =  ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame','Kwame'];
+let femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama','Ama'];
 
 // Submit event
 document.querySelector('#submit').addEventListener('click', submit);
@@ -17,19 +17,21 @@ function submit(){
     day = document.querySelector('#day').value;
 
     // Calculate the day of the week
-    century = year.slice(0,2)
+    century = yearFull.slice(0,2)
     dayOfWeek = parseInt(( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7);
 
     // Get the gender value and Ghanian Name
     let getGender = document.querySelector('#gender').value;
     if(getGender == 'Male'){
         document.querySelector('#wait').style = 'display:none';
+        document.querySelector('#female').style = 'display:none';
         document.querySelector('#male').style = 'display:block';
         document.querySelector('#maleName').textContent = maleNames[dayOfWeek]
         document.querySelector('#maleDay').textContent = daysOfWeek[dayOfWeek]
     }
     else if(getGender == 'Female'){
         document.querySelector('#wait').style = 'display:none';
+        document.querySelector('#male').style = 'display:none';
         document.querySelector('#female').style = 'display:block';
         document.querySelector('#femaleName').textContent = femaleNames[dayOfWeek]
         document.querySelector('#femaleDay').textContent = daysOfWeek[dayOfWeek]
